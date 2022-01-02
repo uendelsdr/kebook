@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+ul {
+  margin: 0px;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+}
