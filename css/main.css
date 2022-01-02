@@ -1,0 +1,26 @@
+.menu-introducao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 90px;
+  padding-top: 30px;
+}
+.menu-introducao h2 {
+  font: 500 1.3rem/1.1 "Poppins", Arial;
+  padding-top: 10px;
+}
+.menu-introducao p {
+  font: 400 0.875rem/1 "Roboto", Arial;
+  color: rgb(54, 52, 52);
+}
+.menu-introducao img {
+  width: 200px;
+  height: 100px;
+}
+@media (max-width: 1025px) {
+  .menu-introducao {
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+  }
+}

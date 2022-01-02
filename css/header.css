@@ -1,5 +1,5 @@
 .header-img {
-  display: inline-block;
+  display: block;
   background-image: url(../img/fundo.png);
   background-repeat: no-repeat;
   width: 100%;
@@ -7,16 +7,15 @@
 }
 .header {
   display: flex;
-  flex-direction: row;
-  flex: 1;
+  gap: 50px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  margin-top: 20px;
+  padding-top: 20px;
   font: 400 1.1rem/1.2 Arial;
   color: white;
 }
 .header-botao {
-  text-align: center;
   border: solid 2px white;
   height: max-content;
   border-radius: 25px;
@@ -97,4 +96,40 @@
 .span-final a {
   font-weight: bold;
   text-decoration: underline;
+}
+@media (max-width: 1440px) {
+  .header {
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font: 400 1rem/1 Arial;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header {
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    font: 400 1rem/1.2 Arial;
+    color: white;
+  }
+
+  .header-botao {
+    cursor: pointer;
+    padding: 10px;
+    flex-wrap: nowrap;
+  }
+  .header-botao2,
+  .header-texto h1,
+  .span-final,
+  .header-botao1,
+  .header-texto p {
+    padding-left: 60px;
+  }
+  .header-texto h1 {
+    font-size: 4rem;
+  }
 }
